@@ -7,26 +7,36 @@ public class inherittrigTest {
 	@Test
 	public void calculate()
 	{
-		assertTrue(inherittrig.calc(2, 2, 2));
+		assertEquals(3,inherittrig.calc(2, 2, 2));
+		assertEquals(2,inherittrig.calc(2, 2, 3));
+		assertEquals(2,inherittrig.calc(2, 3, 2));
+		assertEquals(2,inherittrig.calc(3, 2, 2));
+		assertEquals(1,inherittrig.calc(3, 2, 4));
+		assertEquals(0,inherittrig.calc(1, 2, 5));
+		assertEquals(0,inherittrig.calc(2, 3, 5));
+		assertEquals(0,inherittrig.calc(5, 2, 3));
+		assertEquals(0,inherittrig.calc(3, 5, 2));
 	}
+	
+	/*
 	@Test
 	public void calculate1()
 	{
-		assertFalse(inherittrig.calc(2, 2, 3));
+		assertEquals(2,inherittrig.calc(2, 2, 3));
 	}
 	@Test
 	public void calculate2()
 	{
-		assertFalse(inherittrig.calc(2, 3, 2));
+		assertEquals(2,inherittrig.calc(2, 3, 2));
 	}
 	@Test
 	public void calculate3()
 	{
-		assertFalse(inherittrig.calc(3, 2, 2));
+		assertEquals(2,inherittrig.calc(3, 2, 2));
 	}
 	@Test
 	public void calculate4()
 	{
-		assertFalse(inherittrig.calc(3, 2, 4));
-	}
+		assertEquals(1,inherittrig.calc(4, 2, 3));
+	}*/
 }
